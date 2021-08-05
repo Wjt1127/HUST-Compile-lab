@@ -1,0 +1,35 @@
+ 外部变量定义：
+     类型：int
+     变量名：
+          ID： i
+          ID： j
+ 函数定义：
+     类型：int
+     函数名：fun
+     函数型参：
+          类型：int
+          ID： a
+          类型：float
+          ID： b
+     复合语句：
+          复合语句的变量定义：
+               LOCAL VAR_NAME：
+                    类型：int
+                    变量名：
+                         ID： m
+          复合语句的语句部分：
+               条件语句（if-else-if）：
+                    >
+                         ID： a
+                         ID： b
+                    表达式语句：
+                         ASSIGNOP
+                              ID： m
+                              ID： a
+               返回语句：
+                    ID： m
+ 外部变量定义：
+     类型：float
+     变量名：
+          ID： x
+          ID： y

@@ -1,0 +1,684 @@
+(int , TYPE)
+(fibo , ID)
+(( , LP)
+(int , TYPE)
+(a , ID)
+() , RP)
+({ , LC)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(1 , INT)
+(|| , OR)
+(a , ID)
+(== , RELOP)
+(2 , INT)
+() , RP)
+(return , RETURN)
+(1 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(3 , INT)
+() , RP)
+(return , RETURN)
+(2 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(4 , INT)
+() , RP)
+(return , RETURN)
+(3 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(5 , INT)
+() , RP)
+(return , RETURN)
+(5 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(6 , INT)
+() , RP)
+(return , RETURN)
+(8 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(7 , INT)
+() , RP)
+(return , RETURN)
+(13 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(8 , INT)
+() , RP)
+(return , RETURN)
+(21 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(9 , INT)
+() , RP)
+(return , RETURN)
+(34 , INT)
+(; , SEMI)
+(else , ELSE)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(10 , INT)
+() , RP)
+(return , RETURN)
+(55 , INT)
+(; , SEMI)
+(else , ELSE)
+(return , RETURN)
+(( , LP)
+(fibo , ID)
+(( , LP)
+(a , ID)
+(- , MINUS)
+(2 , INT)
+() , RP)
+(+ , PLUS)
+(fibo , ID)
+(( , LP)
+(a , ID)
+(- , MINUS)
+(1 , INT)
+() , RP)
+() , RP)
+(; , SEMI)
+(} , RC)
+(int , TYPE)
+(main , ID)
+(( , LP)
+() , RP)
+({ , LC)
+(int , TYPE)
+(m , ID)
+(, , COMMA)
+(n , ID)
+(, , COMMA)
+(i , ID)
+(; , SEMI)
+(m , ID)
+(= , ASSIGNOP)
+(read , ID)
+(( , LP)
+() , RP)
+(; , SEMI)
+(i , ID)
+(= , ASSIGNOP)
+(1 , INT)
+(; , SEMI)
+(while , WHILE)
+(( , LP)
+(i , ID)
+(< , RELOP)
+(m , ID)
+() , RP)
+({ , LC)
+(n , ID)
+(= , ASSIGNOP)
+(fibo , ID)
+(( , LP)
+(i , ID)
+() , RP)
+(; , SEMI)
+(write , ID)
+(( , LP)
+(n , ID)
+() , RP)
+(; , SEMI)
+(i , ID)
+(++ , SELFADD)
+(; , SEMI)
+(} , RC)
+(return , RETURN)
+(1 , INT)
+(; , SEMI)
+(} , RC)
+ 函数定义：(12)
+   类型： int
+   函数名：fibo
+   函数形参：
+      类型：int, 参数名：a
+   复合语句：(12)
+      复合语句的变量定义部分：
+      复合语句的语句部分：
+         条件语句(IF_THEN_ELSE)：(11)
+            条件：
+               OR
+                  ==
+                     ID： a
+                     INT：1
+                  ==
+                     ID： a
+                     INT：2
+            IF子句：(11)
+               返回语句：(2)
+                  INT：1
+            ELSE子句：(11)
+               条件语句(IF_THEN_ELSE)：(11)
+                  条件：
+                     ==
+                        ID： a
+                        INT：3
+                  IF子句：(11)
+                     返回语句：(3)
+                        INT：2
+                  ELSE子句：(11)
+                     条件语句(IF_THEN_ELSE)：(11)
+                        条件：
+                           ==
+                              ID： a
+                              INT：4
+                        IF子句：(11)
+                           返回语句：(4)
+                              INT：3
+                        ELSE子句：(11)
+                           条件语句(IF_THEN_ELSE)：(11)
+                              条件：
+                                 ==
+                                    ID： a
+                                    INT：5
+                              IF子句：(11)
+                                 返回语句：(5)
+                                    INT：5
+                              ELSE子句：(11)
+                                 条件语句(IF_THEN_ELSE)：(11)
+                                    条件：
+                                       ==
+                                          ID： a
+                                          INT：6
+                                    IF子句：(11)
+                                       返回语句：(6)
+                                          INT：8
+                                    ELSE子句：(11)
+                                       条件语句(IF_THEN_ELSE)：(11)
+                                          条件：
+                                             ==
+                                                ID： a
+                                                INT：7
+                                          IF子句：(11)
+                                             返回语句：(7)
+                                                INT：13
+                                          ELSE子句：(11)
+                                             条件语句(IF_THEN_ELSE)：(11)
+                                                条件：
+                                                   ==
+                                                      ID： a
+                                                      INT：8
+                                                IF子句：(11)
+                                                   返回语句：(8)
+                                                      INT：21
+                                                ELSE子句：(11)
+                                                   条件语句(IF_THEN_ELSE)：(11)
+                                                      条件：
+                                                         ==
+                                                            ID： a
+                                                            INT：9
+                                                      IF子句：(11)
+                                                         返回语句：(9)
+                                                            INT：34
+                                                      ELSE子句：(11)
+                                                         条件语句(IF_THEN_ELSE)：(11)
+                                                            条件：
+                                                               ==
+                                                                  ID： a
+                                                                  INT：10
+                                                            IF子句：(11)
+                                                               返回语句：(10)
+                                                                  INT：55
+                                                            ELSE子句：(11)
+                                                               返回语句：(11)
+                                                                  PLUS
+                                                                     函数调用：(11)
+                                                                        函数名：fibo
+                                                                        第1个实际参数表达式：
+                                                                           MINUS
+                                                                              ID： a
+                                                                              INT：2
+
+                                                                     函数调用：(11)
+                                                                        函数名：fibo
+                                                                        第1个实际参数表达式：
+                                                                           MINUS
+                                                                              ID： a
+                                                                              INT：1
+
+ 函数定义：(25)
+   类型： int
+   函数名：main
+      无参函数
+   复合语句：(25)
+      复合语句的变量定义部分：
+         局部变量定义：(15)
+            类型： int
+            变量名：
+                   m
+                   n
+                   i
+      复合语句的语句部分：
+         表达式语句：(16)
+            ASSIGNOP
+               ID： m
+               函数调用：(16)
+                  函数名：read
+         表达式语句：(17)
+            ASSIGNOP
+               ID： i
+               INT：1
+         循环语句：(22)
+            循环条件：
+               <
+                  ID： i
+                  ID： m
+            循环体：(22)
+               复合语句：(22)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(19)
+                        ASSIGNOP
+                           ID： n
+                           函数调用：(19)
+                              函数名：fibo
+                              第1个实际参数表达式：
+                                 ID： i
+
+                     表达式语句：(20)
+                        函数调用：(20)
+                           函数名：write
+                           第1个实际参数表达式：
+                              ID： n
+
+                     表达式语句：(21)
+                        ++(right)
+                           ID： i
+         返回语句：(24)
+            INT：1
+*******
+  IF v6 < v4 GOTO label25
+  GOTO label24
+*******
+
+FUNCTION fibo :
+  PARAM v2
+  temp1 := #1
+  IF v2 == temp1 GOTO label2
+  GOTO label4
+LABEL label4 :
+  temp2 := #2
+  IF v2 == temp2 GOTO label2
+  GOTO label3
+LABEL label2 :
+  temp3 := #1
+  RETURN temp3
+  GOTO label1
+LABEL label3 :
+  temp4 := #3
+  IF v2 == temp4 GOTO label5
+  GOTO label6
+LABEL label5 :
+  temp5 := #2
+  RETURN temp5
+  GOTO label1
+LABEL label6 :
+  temp6 := #4
+  IF v2 == temp6 GOTO label7
+  GOTO label8
+LABEL label7 :
+  temp7 := #3
+  RETURN temp7
+  GOTO label1
+LABEL label8 :
+  temp8 := #5
+  IF v2 == temp8 GOTO label9
+  GOTO label10
+LABEL label9 :
+  temp9 := #5
+  RETURN temp9
+  GOTO label1
+LABEL label10 :
+  temp10 := #6
+  IF v2 == temp10 GOTO label11
+  GOTO label12
+LABEL label11 :
+  temp11 := #8
+  RETURN temp11
+  GOTO label1
+LABEL label12 :
+  temp12 := #7
+  IF v2 == temp12 GOTO label13
+  GOTO label14
+LABEL label13 :
+  temp13 := #13
+  RETURN temp13
+  GOTO label1
+LABEL label14 :
+  temp14 := #8
+  IF v2 == temp14 GOTO label15
+  GOTO label16
+LABEL label15 :
+  temp15 := #21
+  RETURN temp15
+  GOTO label1
+LABEL label16 :
+  temp16 := #9
+  IF v2 == temp16 GOTO label17
+  GOTO label18
+LABEL label17 :
+  temp17 := #34
+  RETURN temp17
+  GOTO label1
+LABEL label18 :
+  temp18 := #10
+  IF v2 == temp18 GOTO label19
+  GOTO label20
+LABEL label19 :
+  temp19 := #55
+  RETURN temp19
+  GOTO label1
+LABEL label20 :
+  temp20 := #2
+  temp21 := v2 - temp20
+  ARG temp21
+  temp22 := CALL fibo
+  temp23 := #1
+  temp24 := v2 - temp23
+  ARG temp24
+  temp25 := CALL fibo
+  temp26 := temp22 + temp25
+  RETURN temp26
+LABEL label1 :
+
+FUNCTION main :
+  temp27 := CALL read
+  v4 := temp27
+  temp28 := #1
+  v6 := temp28
+LABEL label26 :
+  IF v6 < v4 GOTO label25
+  GOTO label24
+LABEL label25 :
+  ARG v6
+  temp29 := CALL fibo
+  v5 := temp29
+  ARG v5
+  CALL  write
+  temp31 := v6
+  v6 := temp31 + 1
+  GOTO label26
+LABEL label24 :
+  temp32 := #1
+  RETURN temp32
+LABEL label21 :
+.data
+_Prompt: .asciiz "Enter an integer:  "
+_ret: .asciiz "\n"
+.globl main
+.text
+ li $t7,0x40
+ jal main
+ li $v0,10
+ syscall
+read:
+  li $v0,4
+  la $a0,_Prompt
+  syscall
+  li $v0,5
+  syscall
+  jr $ra
+write:
+  li $v0,1
+  syscall
+  li $v0,4
+  la $a0,_ret
+  syscall
+  move $v0,$0
+  jr $ra
+
+fibo:
+  li $t3, 1
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label2
+  j label4
+label4:
+  li $t3, 2
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label2
+  j label3
+label2:
+  li $t3, 1
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label3:
+  li $t3, 3
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label5
+  j label6
+label5:
+  li $t3, 2
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label6:
+  li $t3, 4
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label7
+  j label8
+label7:
+  li $t3, 3
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label8:
+  li $t3, 5
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label9
+  j label10
+label9:
+  li $t3, 5
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label10:
+  li $t3, 6
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label11
+  j label12
+label11:
+  li $t3, 8
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label12:
+  li $t3, 7
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label13
+  j label14
+label13:
+  li $t3, 13
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label14:
+  li $t3, 8
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label15
+  j label16
+label15:
+  li $t3, 21
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label16:
+  li $t3, 9
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label17
+  j label18
+label17:
+  li $t3, 34
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label18:
+  li $t3, 10
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  beq $t1,$t2,label19
+  j label20
+label19:
+  li $t3, 55
+  sw $t3, 16($sp)
+  lw $v0, 16($sp)
+  jr $ra
+  j label1
+label20:
+  li $t3, 2
+  sw $t3, 16($sp)
+  lw $t1, 12($sp)
+  lw $t2, 16($sp)
+  sub $t3,$t1,$t2
+  sw $t3, 20($sp)
+  move $t0,$sp
+  addi $sp, $sp, -44
+  sw $ra,0($sp)
+  lw $t1, 20($t0)
+  move $t3,$t1
+  sw $t3,12($sp)
+  jal fibo
+  lw $ra,0($sp)
+  addi $sp,$sp,44
+  sw $v0,28($sp)
+  li $t3, 1
+  sw $t3, 28($sp)
+  lw $t1, 12($sp)
+  lw $t2, 28($sp)
+  sub $t3,$t1,$t2
+  sw $t3, 32($sp)
+  move $t0,$sp
+  addi $sp, $sp, -44
+  sw $ra,0($sp)
+  lw $t1, 32($t0)
+  move $t3,$t1
+  sw $t3,12($sp)
+  jal fibo
+  lw $ra,0($sp)
+  addi $sp,$sp,44
+  sw $v0,40($sp)
+  lw $t1, 28($sp)
+  lw $t2, 40($sp)
+  add $t3,$t1,$t2
+  sw $t3, 40($sp)
+  lw $v0, 40($sp)
+  jr $ra
+label1:
+
+main:
+  addi $sp, $sp, -28
+  addi $sp, $sp, -4
+  sw $ra,0($sp)
+  jal read
+  lw $ra,0($sp)
+  addi $sp, $sp, 4
+  sw $v0, 28($sp)
+  lw $t1, 28($sp)
+  move $t3, $t1
+  sw $t3, 12($sp)
+  li $t3, 1
+  sw $t3, 24($sp)
+  lw $t1, 24($sp)
+  move $t3, $t1
+  sw $t3, 20($sp)
+label26:
+  lw $t1, 20($sp)
+  lw $t2, 12($sp)
+  blt $t1,$t2,label25
+  j label24
+label25:
+  move $t0,$sp
+  addi $sp, $sp, -44
+  sw $ra,0($sp)
+  lw $t1, 20($t0)
+  move $t3,$t1
+  sw $t3,12($sp)
+  jal fibo
+  lw $ra,0($sp)
+  addi $sp,$sp,44
+  sw $v0,28($sp)
+  lw $t1, 28($sp)
+  move $t3, $t1
+  sw $t3, 16($sp)
+  lw $a0, 16($sp)
+  addi $sp, $sp, -4
+  sw $ra,0($sp)
+  jal write
+  lw $ra,0($sp)
+  addi $sp, $sp, 4
+  lw $t1,20($sp)
+  add $t1,$t1,1
+  sw $t1,20($sp)
+  j label26
+label24:
+  li $t3, 1
+  sw $t3, 24($sp)
+  lw $v0, 24($sp)
+  jr $ra
+label21:

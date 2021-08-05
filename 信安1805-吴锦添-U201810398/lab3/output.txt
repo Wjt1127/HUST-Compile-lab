@@ -1,0 +1,383 @@
+(int , TYPE)
+(func , ID)
+(( , LP)
+() , RP)
+({ , LC)
+(int , TYPE)
+(i , ID)
+(= , ASSIGNOP)
+(15 , INT)
+(; , SEMI)
+(return , RETURN)
+(i , ID)
+(; , SEMI)
+(} , RC)
+(int , TYPE)
+(main , ID)
+(( , LP)
+() , RP)
+({ , LC)
+(int , TYPE)
+(a , ID)
+(= , ASSIGNOP)
+(3 , INT)
+(; , SEMI)
+(if , IF)
+(( , LP)
+(1 , INT)
+(&& , AND)
+(1 , INT)
+() , RP)
+({ , LC)
+(a , ID)
+(++ , SELFADD)
+(; , SEMI)
+(a , ID)
+(-- , SELFDEC)
+(; , SEMI)
+(} , RC)
+(if , IF)
+(( , LP)
+(a , ID)
+(== , RELOP)
+(3 , INT)
+() , RP)
+({ , LC)
+(a , ID)
+(= , ASSIGNOP)
+(8 , INT)
+(; , SEMI)
+(} , RC)
+(if , IF)
+(( , LP)
+(a , ID)
+(<= , RELOP)
+(10 , INT)
+() , RP)
+({ , LC)
+(a , ID)
+(= , ASSIGNOP)
+(6 , INT)
+(; , SEMI)
+(} , RC)
+(if , IF)
+(( , LP)
+(a , ID)
+(>= , RELOP)
+(3 , INT)
+() , RP)
+({ , LC)
+(a , ID)
+(= , ASSIGNOP)
+(4 , INT)
+(; , SEMI)
+(} , RC)
+(if , IF)
+(( , LP)
+(a , ID)
+(< , RELOP)
+(5 , INT)
+() , RP)
+({ , LC)
+(a , ID)
+(= , ASSIGNOP)
+(5 , INT)
+(; , SEMI)
+(} , RC)
+(if , IF)
+(( , LP)
+(a , ID)
+(> , RELOP)
+(4 , INT)
+() , RP)
+({ , LC)
+(a , ID)
+(= , ASSIGNOP)
+(10 , INT)
+(; , SEMI)
+(} , RC)
+(a , ID)
+(= , ASSIGNOP)
+(func , ID)
+(( , LP)
+() , RP)
+(; , SEMI)
+(return , RETURN)
+(a , ID)
+(; , SEMI)
+(} , RC)
+ 函数定义：(5)
+   类型： int
+   函数名：func
+      无参函数
+   复合语句：(5)
+      复合语句的变量定义部分：
+         局部变量定义：(3)
+            类型： int
+            变量名：
+                   i ASSIGNOP
+                     INT：15
+      复合语句的语句部分：
+         返回语句：(4)
+            ID： i
+ 函数定义：(36)
+   类型： int
+   函数名：main
+      无参函数
+   复合语句：(36)
+      复合语句的变量定义部分：
+         局部变量定义：(8)
+            类型： int
+            变量名：
+                   a ASSIGNOP
+                     INT：3
+      复合语句的语句部分：
+         条件语句(IF_THEN)：(14)
+            条件：
+               AND
+                  INT：1
+                  INT：1
+            IF子句：(14)
+               复合语句：(13)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(11)
+                        ++(right)
+                           ID： a
+                     表达式语句：(12)
+                        --(right)                           ID： a
+         条件语句(IF_THEN)：(18)
+            条件：
+               ==
+                  ID： a
+                  INT：3
+            IF子句：(18)
+               复合语句：(17)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(16)
+                        ASSIGNOP
+                           ID： a
+                           INT：8
+         条件语句(IF_THEN)：(22)
+            条件：
+               <=
+                  ID： a
+                  INT：10
+            IF子句：(22)
+               复合语句：(21)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(20)
+                        ASSIGNOP
+                           ID： a
+                           INT：6
+         条件语句(IF_THEN)：(26)
+            条件：
+               >=
+                  ID： a
+                  INT：3
+            IF子句：(26)
+               复合语句：(25)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(24)
+                        ASSIGNOP
+                           ID： a
+                           INT：4
+         条件语句(IF_THEN)：(30)
+            条件：
+               <
+                  ID： a
+                  INT：5
+            IF子句：(30)
+               复合语句：(29)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(28)
+                        ASSIGNOP
+                           ID： a
+                           INT：5
+         条件语句(IF_THEN)：(34)
+            条件：
+               >
+                  ID： a
+                  INT：4
+            IF子句：(34)
+               复合语句：(33)
+                  复合语句的变量定义部分：
+                  复合语句的语句部分：
+                     表达式语句：(32)
+                        ASSIGNOP
+                           ID： a
+                           INT：10
+         表达式语句：(34)
+            ASSIGNOP
+               ID： a
+               函数调用：(34)
+                  函数名：func
+         返回语句：(35)
+            ID： a
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F      0
+     i     v2      1     int    V     12
+        temp1      1     int    T     16
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp5      2     int    T     20
+        temp6      2     int    T     20
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp7      1     int    T     20
+        temp8      2     int    T     20
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp7      1     int    T     20
+        temp9      1     int    T     20
+       temp10      2     int    T     20
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp7      1     int    T     20
+        temp9      1     int    T     20
+       temp11      1     int    T     20
+       temp12      2     int    T     20
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp7      1     int    T     20
+        temp9      1     int    T     20
+       temp11      1     int    T     20
+       temp13      1     int    T     20
+       temp14      2     int    T     20
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp7      1     int    T     20
+        temp9      1     int    T     20
+       temp11      1     int    T     20
+       temp13      1     int    T     20
+       temp15      1     int    T     20
+       temp16      2     int    T     20
+变量名 别 名 层 号  类  型 标记 偏移量
+  read             0     int    F      4
+ write             0     int    F      4
+     x             1     int    P     12
+  func     v1      0     int    F     20
+  main     v3      0     int    F      0
+     a     v4      1     int    V     12
+        temp2      1     int    T     16
+        temp3      1     int    T     20
+        temp4      1     int    T     20
+        temp7      1     int    T     20
+        temp9      1     int    T     20
+       temp11      1     int    T     20
+       temp13      1     int    T     20
+       temp15      1     int    T     20
+       temp17      1     int    T     20
+
+FUNCTION func :
+  temp1 := #15
+  v2 := temp1
+  RETURN v2
+LABEL label1 :
+
+FUNCTION main :
+  temp2 := #3
+  v4 := temp2
+  temp3 := #1
+LABEL label5 :
+  temp4 := #1
+LABEL label4 :
+  temp5 := v4
+  v4 := temp5 + 1
+  temp6 := v4
+  v4 := temp6 - 1
+LABEL label3 :
+  temp7 := #3
+  IF v4 == temp7 GOTO label8
+  GOTO label7
+LABEL label8 :
+  temp8 := #8
+  v4 := temp8
+LABEL label7 :
+  temp9 := #10
+  IF v4 <= temp9 GOTO label10
+  GOTO label9
+LABEL label10 :
+  temp10 := #6
+  v4 := temp10
+LABEL label9 :
+  temp11 := #3
+  IF v4 >= temp11 GOTO label12
+  GOTO label11
+LABEL label12 :
+  temp12 := #4
+  v4 := temp12
+LABEL label11 :
+  temp13 := #5
+  IF v4 < temp13 GOTO label14
+  GOTO label13
+LABEL label14 :
+  temp14 := #5
+  v4 := temp14
+LABEL label13 :
+  temp15 := #4
+  IF v4 > temp15 GOTO label16
+  GOTO label15
+LABEL label16 :
+  temp16 := #10
+  v4 := temp16
+LABEL label15 :
+  temp17 := CALL func
+  v4 := temp17
+  RETURN v4
+LABEL label2 :
